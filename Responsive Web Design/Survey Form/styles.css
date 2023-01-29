@@ -8,6 +8,10 @@ body{
     display: block;
 }
 
+select{
+    margin:none;
+}
+
 #title {
     margin: 0px 0px auto;
     padding-top: 20px;
@@ -20,11 +24,12 @@ body{
     color: whitesmoke;
 }
 
-#personal-info{
+#personal-info, #class-questions{
+    padding: 0px;
     border: none;
 }
 
-label, input{
+label, input, select{
     margin: 10px auto;
     display: block;
     width: 60%;

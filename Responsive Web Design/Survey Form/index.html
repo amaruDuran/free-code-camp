@@ -13,12 +13,31 @@
         <p id="description">Dejanos tu opinión! Lo utilizaremos para futuros alumnos y posibles mejoras al curso.</p>
         <form id="survey-form" action="submit">
             <fieldset id="personal-info">
-                <label for="name">name (*): <input id="name" name="name" type="text" required/></label>
-                <label for="email">email (*): <input id="email" name="email" type="email" required/></label>
-                <label for="age">age (*): <input id="age" name="age" type="number"/></label>
+                <label id="name-label" for="name">name (*): <input placeholder="Enter your name" id="name" name="name" type="text" value="" required/></label>
+                <label id="email-label" for="email">email (*): <input placeholder="Enter your email" id="email" name="email" type="email" value="" required/></label>
+                <label id="number-label" for="number">age: <input placeholder="Age" id="number" name="age" type="number" value="" min="18" max="120"/></label>
             </fieldset>
-            <fieldset>
-                
+            <fieldset id="class-questions">
+                <label for="">Cómo calificas las clases teóricas? (*)
+                    <select name="theoric-question" id="dropdown" required>
+                        <option selected disabled value="">Selecciona un puntaje</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+                <label for=""> Cómo calificas las clases prácticas? (*)
+                    <select name="practice-question" id="dropdown" required>
+                        <option selected disabled value="">Selecciona un puntaje</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
             </fieldset>
             <fieldset>
                 

@@ -18,7 +18,12 @@
                 <label id="number-label" for="number">age: <input placeholder="Age" id="number" name="age" type="number" value="" min="18" max="120"/></label>
             </fieldset>
             <fieldset id="class-questions">
-                <label for="">Cómo calificas las clases teóricas? (*)
+                <label id="select-label" for="">Seleciona tu catedra (*): <br>
+                    <label class="select-class" for="first-class"><input id="first-class" class="select-input" type="radio" value="Schiavi" name="cathedra"/>Schiavi</label>
+                    <label class="select-class" for="second-class"><input id="second-class" class="select-input" type="radio" value="Rodriguez" name="cathedra"/>Rodríguez</label>
+                    <label class="select-class" for="third-class"><input id="third-class" class="select-input" type="radio" value="Rodriguez" name="cathedra"/>Martínez</label>
+                </label>
+                <label for="dropdown-theory">Cómo calificas las clases teóricas? (*)
                     <select name="theoric-question" id="dropdown" required>
                         <option selected disabled value="">Selecciona un puntaje</option>
                         <option value="1">1</option>
@@ -28,8 +33,8 @@
                         <option value="5">5</option>
                     </select>
                 </label>
-                <label for=""> Cómo calificas las clases prácticas? (*)
-                    <select name="practice-question" id="dropdown" required>
+                <label for="dropdown-practice"> Cómo calificas las clases prácticas? (*)
+                    <select name="practice-question" id="dropdown-practice" required>
                         <option selected disabled value="">Selecciona un puntaje</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -42,7 +47,7 @@
             <fieldset>
                 
             </fieldset>
-            <input id="button" type="submit"/>
+            <input id="submit" type="submit"/>
         </form>
     </body>
 </div>

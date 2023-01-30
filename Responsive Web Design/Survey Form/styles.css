@@ -36,6 +36,11 @@ select{
     border: none;
 }
 
+.select-class{
+    display: inline-block;
+    margin: 10px 10px;
+}
+
 label, input, select{
     margin: 10px auto;
     display: block;
@@ -48,7 +53,7 @@ input, select{
     border-radius: 3px;
 }
 
-#button{
+#submit{
     padding: 10px 0px; 
     background-color:#3cb371;
     color: whitesmoke;

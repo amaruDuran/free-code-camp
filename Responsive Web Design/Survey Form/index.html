@@ -17,7 +17,8 @@
                 <label id="email-label" for="email">email (*): <input placeholder="Enter your email" id="email" name="email" type="email" value="" required/></label>
                 <label id="number-label" for="number">age: <input placeholder="Age" id="number" name="age" type="number" value="" min="18" max="120"/></label>
             </fieldset>
-            <fieldset id="class-questions">
+            <hr>
+            <fieldset class="class-questions">
                 <label id="select-label" for="">Seleciona tu catedra (*): <br>
                     <label class="select-class" for="first-class"><input id="first-class" class="select-input" type="radio" value="Schiavi" name="cathedra"/>Schiavi</label>
                     <label class="select-class" for="second-class"><input id="second-class" class="select-input" type="radio" value="Rodriguez" name="cathedra"/>Rodríguez</label>
@@ -44,11 +45,19 @@
                     </select>
                 </label>
             </fieldset>
-            <fieldset>
-                
+            <fieldset class="class-questions">
+                <div class="last-question">
+                    <label for="">Selecciona al menos 1 característica positiva:</label>
+                    <label class="checkbox-label" for="op1"><input type="checkbox" name="Brightness" id="op1"/>Explica con claridad</label>
+                    <label class="checkbox-label" for="op2"><input type="checkbox" name="punctual" id="op2"/>Llega en horario</label>
+                    <label class="checkbox-label" for="op3"><input type="checkbox" name="online-fast-response" id="op3"/>Responde por Mail o Slack</label>
+                    <label class="checkbox-label" for="op4"><input type="checkbox" name="class-fast-response" id="op4"/>Responde Las preguntas en clase</label>
+                </div>
             </fieldset>
             <input id="submit" type="submit"/>
         </form>
     </body>
+    <footer>.
+    </footer>
 </div>
 </html>

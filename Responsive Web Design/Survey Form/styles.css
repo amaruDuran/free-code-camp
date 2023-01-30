@@ -8,8 +8,15 @@ body{
     display: block;
 }
 
+#survey-form{
+    max-width: 720px;
+    min-width: 300px;
+    margin: 0px auto;
+}
+
 select{
     margin:none;
+    width: 70%;
 }
 
 #title {
@@ -32,13 +39,24 @@ select{
 label, input, select{
     margin: 10px auto;
     display: block;
-    width: 60%;
-    min-width: 300px;
-    max-width: 720px;
 }
 
-input{
+input, select{
     border: none;
+    padding: 5px 2px;
+    width: 70%;
+    border-radius: 3px;
+}
+
+#button{
+    padding: 10px 0px; 
+    background-color:#3cb371;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+#button:hover{
+    background-color: #2b8855;
 }
 
 label{

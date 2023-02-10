@@ -1,0 +1,21 @@
+body{
+    margin: 0px;
+    font-family: 'Lora', serif;
+}
+
+#main{
+    width: 90%;
+    margin: 0px auto;
+}
+
+#header{
+    background-color: rgb(177, 117, 117);
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}

@@ -19,3 +19,18 @@ h1{
 p{
     text-align: center;
 }
+
+#img-div{
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0px;
+}
+
+#image{
+    margin: 0px auto;
+    max-width: 1024px;
+}
+
+figcaption{
+    text-align: center;
+}

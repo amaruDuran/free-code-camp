@@ -9,15 +9,17 @@ body{
 }
 
 #header{
-    background-color: rgb(177, 117, 117);
+    background-color: rgb(32, 38, 128);
 }
 
 h1{
     text-align: center;
+    color: #fff;
 }
 
 p{
     text-align: center;
+    color: #fff;
 }
 
 #img-div{
@@ -29,6 +31,7 @@ p{
 #image{
     margin: 0px auto;
     max-width: 1024px;
+    width: 100%;
 }
 
 figcaption{

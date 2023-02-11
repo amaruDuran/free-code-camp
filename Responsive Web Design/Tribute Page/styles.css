@@ -12,8 +12,11 @@ body{
     background-color: rgb(32, 38, 128);
 }
 
-h1{
+h1, h2, h4{
     text-align: center;
+}
+
+#title{
     color: #fff;
 }
 
@@ -36,4 +39,21 @@ p{
 
 figcaption{
     text-align: center;
+}
+
+#info-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    width: 80%;
+    align-items: center;
+    margin: 0px auto;
+    max-width: 720px;
+}
+
+li{
+    list-style: square;
+    width:100%;
+    margin: none;
+    /* text-align: center; */
 }

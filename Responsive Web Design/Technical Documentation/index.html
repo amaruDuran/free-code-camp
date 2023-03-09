@@ -59,9 +59,16 @@
             </header>
             <h3>list.pop([i])</h3>
             <h4><i>Complejidad Temporal:</i> O(1) sin parámetros, O(n) con parametros</h4>
-            <p>Elimina el elemento de la lista ubicado en la posición i y lo devuelve.</p>
-            <p>Podemos no pasarle el parámetro i, en ese caso, la función pop elimina el último elemento de la lista y lo devuelve.</p>
-            <div><b>Caso I</b>: Le pasamos el parámetro i.</div>
+            <p>
+                Elimina el elemento de la lista ubicado en la posición i y lo devuelve.
+            </p>
+            <p>
+                Podemos no pasarle el parámetro i, en ese caso, 
+                la función pop elimina el último elemento de la lista y lo devuelve.
+            </p>
+            <div>
+                <b>Caso I</b>: Le pasamos el parámetro i.
+            </div>
             <pre>
                 <code class="code-example">
                     $ frutas = ["pera", "manzana", "naranja"]
@@ -87,8 +94,13 @@
                 <h2>Insertar Elemento</h2>
             </header>
             <h3>list.insert(i, x)</h3>
-            <p>Inserta un elemento x en la posición i pasada por paŕametro.</p>
-            <p>Esto implica que si se encontraban elementos en la lista anteriormente, desplaza los elementos posteriores a la posición i a la derecha.</p>
+            <p>
+                Inserta un elemento x en la posición i pasada por paŕametro.
+            </p>
+            <p>
+                Esto implica que si se encontraban elementos en la lista anteriormente, 
+                desplaza los elementos posteriores a la posición i a la derecha.
+            </p>
             <h4><i>Complejidad Temporal:</i> O(n)</h4>
             <pre>
                 <code class="code-example">
@@ -107,9 +119,16 @@
                 <h2>Copiar lista</h2>
             </header>
             <h3>list.copy()</h3>
-            <p>Devuelve una copia exacta de la lista.</p>
-            <p>Otra forma de copiar puede realizarse asignando a una variable pasandoles la lista entera ó parte de ella como <a href="https://www.geeksforgeeks.org/python-list-slicing/" target="_blank">slice</a>.</p>
-            <div><b>Caso I</b>: Copia exacta de la lista.</div>
+            <p>
+                Devuelve una copia exacta de la lista.
+            </p>
+            <p>
+                Otra forma de copiar puede realizarse asignando a una variable pasandoles la lista entera ó parte de ella 
+                como <a href="https://www.geeksforgeeks.org/python-list-slicing/" target="_blank">slice</a>.
+            </p>
+            <div>
+                <b>Caso I</b>: Copia exacta de la lista.
+            </div>
             <pre>
                 <code class="code-example">
                     $ cosas = [1, "dos", 3, "cuatro"]
@@ -127,7 +146,9 @@
                     [1, "dos", 3, "cuatro"]
                 </code>
             </pre>
-            <div><b>Caso II</b>: Copia a través del pasaje de parte de la lista como slice.</div>
+            <div>
+                <b>Caso II</b>: Copia a través del pasaje de parte de la lista como slice.
+            </div>
             <pre>
                 <code class="code-example">
                     $ cosas = [1, "dos", 3, "cuatro"]
@@ -141,6 +162,51 @@
                     $ print(cosas)
 
                     [1, "dos", 3, "cuatro"]
+                </code>
+            </pre>
+        </section>
+        <section id="Concatenar_Listas" class="main-section">
+            <header>
+                <h2>Concatenar Listas</h2>
+            </header>
+            <h3>list.extend(iter)</h3>
+            <p>
+                Extiende la lista e incluye en la lista los elementos provenientes de un iterable que lo llamo iter. 
+                Puede ser tanto una lista ó cualquier iterable que conozcamos (en caso de no ser una lista se comporta según el tipo de iterable.).
+            </p>
+            <p>
+                También mostraré una forma de concatenar listas que posee python. 
+                Dado que la anterior forma realiza la concatenación in-place, es decir, 
+                aplica la operación sobre la misma lista.
+            </p>
+            <h4><i>Complejidad Temporal: </i>O(m)</h4>
+            <div>m: cantidad de elementos en el iterable.</div>
+            <div><b>Caso I</b>: uso de extend.</div>
+            <pre>
+                <code class="code-example">
+                    $ frutas = ["pera", "manzana", "naranja"]
+
+                    $ postres = ["Selva Negra", "Helado", "Budín"]
+
+                    $ frutas.extend(postres)
+
+                    $ print(frutas)
+
+                    $ ["pera", "anana", "manzana", "naranja", "Selva Negra", "Helado", "Budín"]
+                </code>
+            </pre>
+            <div><b>Caso II</b>: concatenar 2 listas.</div>
+            <pre>
+                <code class="code-example">
+                    $ frutas = ["pera","manzana", "naranja"]
+
+                    $ postres = ["Selva Negra", "Helado", "Budín"]
+
+                    $ comida = frutas + postres
+
+                    $ print(comida)
+
+                    $ ["pera","manzana", "naranja", "Selva Negra", "Helado", "Budín"]
                 </code>
             </pre>
         </section>

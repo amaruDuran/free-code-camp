@@ -9,7 +9,7 @@
 </head>
 <body>
     <main id="main-doc">
-        <section id="definition-list" class="main-section">
+        <section id="Listas" class="main-section">
             <header>
                 <h1>Listas</h1>
             </header>
@@ -20,67 +20,127 @@
                 hasta objetos (tipos de datos abstractos - TDAs).
             </p>
         </section>
-        <section id="create-list" class="main-section">
+        <section id="Crear_una_lista" class="main-section">
             <header>
                 <h2>Crear una lista</h2>
             </header>
             <pre>
                 <code class="code-example">
-                    $ alumnos = []
+                    $ frutas = []
 
-                    $ alumnos
+                    $ frutas
 
                     $ []
                 </code>
             </pre>
         </section>
-        <section id="append-list" class="main-section">
+        <section id="Agregar_Elemento" class="main-section">
             <header>
                 <h2>Agregar Elemento</h2>
-                <h3>list.append(x)</h3>
             </header>
+            <h3>list.append(x)</h3>
             <p>recibe el elemento x a agregar y lo agrega al final de la lista.</p>
             <h4><i>Complejidad Temporal:</i> O(1)</h4>
             <pre>
                 <code class="code-example">
-                    $ alumnos = []
+                    $ frutas = ["manzana"]
 
-                    $ alumnos
+                    $ frutas.append("pelota")
 
-                    $ []
+                    $ print(frutas)
+
+                    $ ["manzana","pelota"]
                 </code>
             </pre>
         </section>
-        <section id="pop-list" class="main-section">
+        <section id="ELiminar_Elemento" class="main-section">
             <header>
                 <h2>Eliminar Elemento</h2>
-                <h3>list.pop([i])</h3>
             </header>
+            <h3>list.pop([i])</h3>
             <h4><i>Complejidad Temporal:</i> O(1) sin parámetros, O(n) con parametros</h4>
-            <p>Le pasamos la posición i en la que se encuentra el elemento, lo elimina de la lista y lo devuelve. <br>
-                Podemos no pasarle el parámetro i, en ese caso, la función pop elimina el último elemento de la lista y lo devuelve.</p>
+            <p>Elimina el elemento de la lista ubicado en la posición i y lo devuelve.</p>
+            <p>Podemos no pasarle el parámetro i, en ese caso, la función pop elimina el último elemento de la lista y lo devuelve.</p>
+            <div><b>Caso I</b>: Le pasamos el parámetro i.</div>
             <pre>
                 <code class="code-example">
-                    $ alumnos = []
+                    $ frutas = ["pera", "manzana", "naranja"]
 
-                    $ alumnos
+                    $ frutas.pop(0) // Elimina el primer elemento de la lista.
 
-                    $ []
+                    $ "pera"
+                </code>
+            </pre>
+            <div><b>Caso II</b>: Sin parámetros.</div>
+            <pre>
+                <code class="code-example">
+                    $ frutas = ["pera", "manzana", "naranja"]
+
+                    $ frutas.pop() // Elimina el último elemento de la lista.
+
+                    $ "naranja"
                 </code>
             </pre>
         </section>
-        <section id="blabla-list" class="main-section">
+        <section id="Insertar_Elemento" class="main-section">
             <header>
-                <h2>Agregar Elemento</h2>
-                <h3>list.append(x)</h3>
+                <h2>Insertar Elemento</h2>
             </header>
+            <h3>list.insert(i, x)</h3>
+            <p>Inserta un elemento x en la posición i pasada por paŕametro.</p>
+            <p>Esto implica que si se encontraban elementos en la lista anteriormente, desplaza los elementos posteriores a la posición i a la derecha.</p>
+            <h4><i>Complejidad Temporal:</i> O(n)</h4>
             <pre>
                 <code class="code-example">
-                    $ alumnos = []
+                    $ frutas = ["pera","manzana", "naranja"]
 
-                    $ alumnos
+                    $ frutas.insert(1, "anana")
 
-                    $ []
+                    $ print(frutas)
+
+                    $ ["pera", "anana", "manzana", "naranja"]
+                </code>
+            </pre>
+        </section>
+        <section id="Copiar_lista" class="main-section">
+            <header>
+                <h2>Copiar lista</h2>
+            </header>
+            <h3>list.copy()</h3>
+            <p>Devuelve una copia exacta de la lista.</p>
+            <p>Otra forma de copiar puede realizarse asignando a una variable pasandoles la lista entera ó parte de ella como <a href="https://www.geeksforgeeks.org/python-list-slicing/" target="_blank">slice</a>.</p>
+            <div><b>Caso I</b>: Copia exacta de la lista.</div>
+            <pre>
+                <code class="code-example">
+                    $ cosas = [1, "dos", 3, "cuatro"]
+
+                    $ otras_cosas = cosas.copy()
+
+                    $ otras_cosas.append(5)
+
+                    $ print(otras_cosas)
+
+                    [1, "dos", 3, "cuatro", 5]
+
+                    $ print(cosas)
+
+                    [1, "dos", 3, "cuatro"]
+                </code>
+            </pre>
+            <div><b>Caso II</b>: Copia a través del pasaje de parte de la lista como slice.</div>
+            <pre>
+                <code class="code-example">
+                    $ cosas = [1, "dos", 3, "cuatro"]
+
+                    $ otras_cosas = cosas[1:] //Tomo la lista desde la posición 1 inclusive hasta la última posición inclusive.
+
+                    $ print(otras_cosas)
+
+                    ["dos", 3, "cuatro", 5]
+
+                    $ print(cosas)
+
+                    [1, "dos", 3, "cuatro"]
                 </code>
             </pre>
         </section>

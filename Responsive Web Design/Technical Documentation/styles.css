@@ -20,3 +20,31 @@ pre{
     font-size: 15px;
     color: #fff;
 }
+
+#container-doc{
+    display: flex;
+}
+
+#main-doc{
+    padding: 20px 20px;
+}
+
+#title-nav{
+    text-align: center;
+    padding: 10px;
+    color: #fefefe;
+}
+
+.nav-link{
+    color: #fefefe;
+}
+
+.elem-indice{
+    list-style: none;
+}
+
+#navbar{
+    min-width: 300px;
+    width: 15%;
+    background-color: rgb(44, 70, 143);
+}

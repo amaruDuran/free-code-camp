@@ -5,211 +5,239 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Python List Documentation</title>
+    <title>Documentación listas de Python</title>
 </head>
 <body>
-    <main id="main-doc">
-        <section id="Listas" class="main-section">
-            <header>
-                <h1>Listas</h1>
-            </header>
-            <p>
-                Las listas son una de las estructuras de datos más utilizadas en el mundo. 
-                Estas permiten multiples tipos de datos dentro de la misma.
-                Dado que python no es fuertemente tipado. Se pueden Guardar desde números, strings,
-                hasta objetos (tipos de datos abstractos - TDAs).
-            </p>
-        </section>
-        <section id="Crear_una_lista" class="main-section">
-            <header>
-                <h2>Crear una lista</h2>
-            </header>
-            <pre>
-                <code class="code-example">
-                    $ frutas = []
+    <div id="container-doc">
+        <nav id="navbar">
+            <header id="title-nav">Listas de Python</header>
+            <ul>
+                <li class="elem-indice">
+                    <a class="nav-link" href="#Listas_De_Python">Listas De Python</a>
+                </li>
+                <li class="elem-indice">
+                    <a class="nav-link" href="#Crear_Lista">Crear Lista</a>
+                </li>
+                <li class="elem-indice">
+                    <a class="nav-link" href="#Agregar_Elemento">Agregar elemento</a>
+                </li>
+                <li class="elem-indice">
+                    <a class="nav-link" href="#Eliminar_Elemento">Eliminar elemento</a>
+                </li>
+                <li class="elem-indice">
+                    <a class="nav-link" href="#Insertar_Elemento">Insertar elemento</a>
+                </li>
+                <li class="elem-indice">
+                    <a class="nav-link" href="#Copiar_Lista">Copiar Lista</a>
+                </li>
+                <li class="elem-indice">
+                    <a class="nav-link" href="#Concatenar_Listas">Concatenar Listas</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section id="Listas_De_Python" class="main-section">
+                <header>
+                    <h1>Listas De Python</h1>
+                </header>
+                <p>
+                    Las listas son una de las estructuras de datos más utilizadas en el mundo. 
+                    Estas permiten multiples tipos de datos dentro de la misma.
+                    Dado que python no es fuertemente tipado. Se pueden Guardar desde números, strings,
+                    hasta objetos (tipos de datos abstractos - TDAs).
+                </p>
+            </section>
+            <section id="Crear_Lista" class="main-section">
+                <header>
+                    <h2>Crear Lista</h2>
+                </header>
+                <pre>
+                    <code class="code-example">
+                        $ frutas = []
 
-                    $ frutas
+                        $ frutas
 
-                    $ []
-                </code>
-            </pre>
-        </section>
-        <section id="Agregar_Elemento" class="main-section">
-            <header>
-                <h2>Agregar Elemento</h2>
-            </header>
-            <h3>list.append(x)</h3>
-            <p>recibe el elemento x a agregar y lo agrega al final de la lista.</p>
-            <h4><i>Complejidad Temporal:</i> O(1)</h4>
-            <pre>
-                <code class="code-example">
-                    $ frutas = ["manzana"]
+                        $ []
+                    </code>
+                </pre>
+            </section>
+            <section id="Agregar_Elemento" class="main-section">
+                <header>
+                    <h2>Agregar Elemento</h2>
+                </header>
+                <h3>list.append(x)</h3>
+                <p>recibe el elemento x a agregar y lo agrega al final de la lista.</p>
+                <h4><i>Complejidad Temporal:</i> O(1)</h4>
+                <pre>
+                    <code class="code-example">
+                        $ frutas = ["manzana"]
 
-                    $ frutas.append("pelota")
+                        $ frutas.append("pelota")
 
-                    $ print(frutas)
+                        $ print(frutas)
 
-                    $ ["manzana","pelota"]
-                </code>
-            </pre>
-        </section>
-        <section id="ELiminar_Elemento" class="main-section">
-            <header>
-                <h2>Eliminar Elemento</h2>
-            </header>
-            <h3>list.pop([i])</h3>
-            <h4><i>Complejidad Temporal:</i> O(1) sin parámetros, O(n) con parametros</h4>
-            <p>
-                Elimina el elemento de la lista ubicado en la posición i y lo devuelve.
-            </p>
-            <p>
-                Podemos no pasarle el parámetro i, en ese caso, 
-                la función pop elimina el último elemento de la lista y lo devuelve.
-            </p>
-            <div>
-                <b>Caso I</b>: Le pasamos el parámetro i.
-            </div>
-            <pre>
-                <code class="code-example">
-                    $ frutas = ["pera", "manzana", "naranja"]
+                        $ ["manzana","pelota"]
+                    </code>
+                </pre>
+            </section>
+            <section id="Eliminar_Elemento" class="main-section">
+                <header>
+                    <h2>Eliminar Elemento</h2>
+                </header>
+                <h3>list.pop([i])</h3>
+                <h4><i>Complejidad Temporal:</i> O(1) sin parámetros, O(n) con parametros</h4>
+                <p>
+                    Elimina el elemento de la lista ubicado en la posición i y lo devuelve.
+                </p>
+                <p>
+                    Podemos no pasarle el parámetro i, en ese caso, 
+                    la función pop elimina el último elemento de la lista y lo devuelve.
+                </p>
+                <div>
+                    <b>Caso I</b>: Le pasamos el parámetro i.
+                </div>
+                <pre>
+                    <code class="code-example">
+                        $ frutas = ["pera", "manzana", "naranja"]
 
-                    $ frutas.pop(0) // Elimina el primer elemento de la lista.
+                        $ frutas.pop(0) // Elimina el primer elemento de la lista.
 
-                    $ "pera"
-                </code>
-            </pre>
-            <div><b>Caso II</b>: Sin parámetros.</div>
-            <pre>
-                <code class="code-example">
-                    $ frutas = ["pera", "manzana", "naranja"]
+                        $ "pera"
+                    </code>
+                </pre>
+                <div><b>Caso II</b>: Sin parámetros.</div>
+                <pre>
+                    <code class="code-example">
+                        $ frutas = ["pera", "manzana", "naranja"]
 
-                    $ frutas.pop() // Elimina el último elemento de la lista.
+                        $ frutas.pop() // Elimina el último elemento de la lista.
 
-                    $ "naranja"
-                </code>
-            </pre>
-        </section>
-        <section id="Insertar_Elemento" class="main-section">
-            <header>
-                <h2>Insertar Elemento</h2>
-            </header>
-            <h3>list.insert(i, x)</h3>
-            <p>
-                Inserta un elemento x en la posición i pasada por paŕametro.
-            </p>
-            <p>
-                Esto implica que si se encontraban elementos en la lista anteriormente, 
-                desplaza los elementos posteriores a la posición i a la derecha.
-            </p>
-            <h4><i>Complejidad Temporal:</i> O(n)</h4>
-            <pre>
-                <code class="code-example">
-                    $ frutas = ["pera","manzana", "naranja"]
+                        $ "naranja"
+                    </code>
+                </pre>
+            </section>
+            <section id="Insertar_Elemento" class="main-section">
+                <header>
+                    <h2>Insertar Elemento</h2>
+                </header>
+                <h3>list.insert(i, x)</h3>
+                <p>
+                    Inserta un elemento x en la posición i pasada por paŕametro.
+                </p>
+                <p>
+                    Esto implica que si se encontraban elementos en la lista anteriormente, 
+                    desplaza los elementos posteriores a la posición i a la derecha.
+                </p>
+                <h4><i>Complejidad Temporal:</i> O(n)</h4>
+                <pre>
+                    <code class="code-example">
+                        $ frutas = ["pera","manzana", "naranja"]
 
-                    $ frutas.insert(1, "anana")
+                        $ frutas.insert(1, "anana")
 
-                    $ print(frutas)
+                        $ print(frutas)
 
-                    $ ["pera", "anana", "manzana", "naranja"]
-                </code>
-            </pre>
-        </section>
-        <section id="Copiar_lista" class="main-section">
-            <header>
-                <h2>Copiar lista</h2>
-            </header>
-            <h3>list.copy()</h3>
-            <p>
-                Devuelve una copia exacta de la lista.
-            </p>
-            <p>
-                Otra forma de copiar puede realizarse asignando a una variable pasandoles la lista entera ó parte de ella 
-                como <a href="https://www.geeksforgeeks.org/python-list-slicing/" target="_blank">slice</a>.
-            </p>
-            <div>
-                <b>Caso I</b>: Copia exacta de la lista.
-            </div>
-            <pre>
-                <code class="code-example">
-                    $ cosas = [1, "dos", 3, "cuatro"]
+                        $ ["pera", "anana", "manzana", "naranja"]
+                    </code>
+                </pre>
+            </section>
+            <section id="Copiar_Lista" class="main-section">
+                <header>
+                    <h2>Copiar Lista</h2>
+                </header>
+                <h3>list.copy()</h3>
+                <p>
+                    Devuelve una copia exacta de la lista.
+                </p>
+                <p>
+                    Otra forma de copiar puede realizarse asignando a una variable pasandoles la lista entera ó parte de ella 
+                    como <a href="https://www.geeksforgeeks.org/python-list-slicing/" target="_blank">slice</a>.
+                </p>
+                <div>
+                    <b>Caso I</b>: Copia exacta de la lista.
+                </div>
+                <pre>
+                    <code class="code-example">
+                        $ cosas = [1, "dos", 3, "cuatro"]
 
-                    $ otras_cosas = cosas.copy()
+                        $ otras_cosas = cosas.copy()
 
-                    $ otras_cosas.append(5)
+                        $ otras_cosas.append(5)
 
-                    $ print(otras_cosas)
+                        $ print(otras_cosas)
 
-                    [1, "dos", 3, "cuatro", 5]
+                        [1, "dos", 3, "cuatro", 5]
 
-                    $ print(cosas)
+                        $ print(cosas)
 
-                    [1, "dos", 3, "cuatro"]
-                </code>
-            </pre>
-            <div>
-                <b>Caso II</b>: Copia a través del pasaje de parte de la lista como slice.
-            </div>
-            <pre>
-                <code class="code-example">
-                    $ cosas = [1, "dos", 3, "cuatro"]
+                        [1, "dos", 3, "cuatro"]
+                    </code>
+                </pre>
+                <div>
+                    <b>Caso II</b>: Copia a través del pasaje de parte de la lista como slice.
+                </div>
+                <pre>
+                    <code class="code-example">
+                        $ cosas = [1, "dos", 3, "cuatro"]
 
-                    $ otras_cosas = cosas[1:] //Tomo la lista desde la posición 1 inclusive hasta la última posición inclusive.
+                        $ otras_cosas = cosas[1:] //Tomo la lista desde la posición 1 inclusive hasta la última posición inclusive.
 
-                    $ print(otras_cosas)
+                        $ print(otras_cosas)
 
-                    ["dos", 3, "cuatro", 5]
+                        ["dos", 3, "cuatro", 5]
 
-                    $ print(cosas)
+                        $ print(cosas)
 
-                    [1, "dos", 3, "cuatro"]
-                </code>
-            </pre>
-        </section>
-        <section id="Concatenar_Listas" class="main-section">
-            <header>
-                <h2>Concatenar Listas</h2>
-            </header>
-            <h3>list.extend(iter)</h3>
-            <p>
-                Extiende la lista e incluye en la lista los elementos provenientes de un iterable que lo llamo iter. 
-                Puede ser tanto una lista ó cualquier iterable que conozcamos (en caso de no ser una lista se comporta según el tipo de iterable.).
-            </p>
-            <p>
-                También mostraré una forma de concatenar listas que posee python. 
-                Dado que la anterior forma realiza la concatenación in-place, es decir, 
-                aplica la operación sobre la misma lista.
-            </p>
-            <h4><i>Complejidad Temporal: </i>O(m)</h4>
-            <div>m: cantidad de elementos en el iterable.</div>
-            <div><b>Caso I</b>: uso de extend.</div>
-            <pre>
-                <code class="code-example">
-                    $ frutas = ["pera", "manzana", "naranja"]
+                        [1, "dos", 3, "cuatro"]
+                    </code>
+                </pre>
+            </section>
+            <section id="Concatenar_Listas" class="main-section">
+                <header>
+                    <h2>Concatenar Listas</h2>
+                </header>
+                <h3>list.extend(iter)</h3>
+                <p>
+                    Extiende la lista e incluye en la lista los elementos provenientes de un iterable que lo llamo iter. 
+                    Puede ser tanto una lista ó cualquier iterable que conozcamos (en caso de no ser una lista se comporta según el tipo de iterable.).
+                </p>
+                <p>
+                    También mostraré una forma de concatenar listas que posee python. 
+                    Dado que la anterior forma realiza la concatenación in-place, es decir, 
+                    aplica la operación sobre la misma lista.
+                </p>
+                <h4><i>Complejidad Temporal: </i>O(m)</h4>
+                <div>m: cantidad de elementos en el iterable.</div>
+                <div><b>Caso I</b>: uso de extend.</div>
+                <pre>
+                    <code class="code-example">
+                        $ frutas = ["pera", "manzana", "naranja"]
 
-                    $ postres = ["Selva Negra", "Helado", "Budín"]
+                        $ postres = ["Selva Negra", "Helado", "Budín"]
 
-                    $ frutas.extend(postres)
+                        $ frutas.extend(postres)
 
-                    $ print(frutas)
+                        $ print(frutas)
 
-                    $ ["pera", "anana", "manzana", "naranja", "Selva Negra", "Helado", "Budín"]
-                </code>
-            </pre>
-            <div><b>Caso II</b>: concatenar 2 listas.</div>
-            <pre>
-                <code class="code-example">
-                    $ frutas = ["pera","manzana", "naranja"]
+                        $ ["pera", "anana", "manzana", "naranja", "Selva Negra", "Helado", "Budín"]
+                    </code>
+                </pre>
+                <div><b>Caso II</b>: concatenar 2 listas.</div>
+                <pre>
+                    <code class="code-example">
+                        $ frutas = ["pera","manzana", "naranja"]
 
-                    $ postres = ["Selva Negra", "Helado", "Budín"]
+                        $ postres = ["Selva Negra", "Helado", "Budín"]
 
-                    $ comida = frutas + postres
+                        $ comida = frutas + postres
 
-                    $ print(comida)
+                        $ print(comida)
 
-                    $ ["pera","manzana", "naranja", "Selva Negra", "Helado", "Budín"]
-                </code>
-            </pre>
-        </section>
-    </main>
+                        $ ["pera","manzana", "naranja", "Selva Negra", "Helado", "Budín"]
+                    </code>
+                </pre>
+            </section>
+        </main>
+    </div>
 </body>
 </html>

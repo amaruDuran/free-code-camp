@@ -4,6 +4,7 @@ html{
 
 body{
     box-sizing: border-box;
+    margin: 0px;
 }
 
 pre{
@@ -26,7 +27,9 @@ pre{
 }
 
 #main-doc{
+    background-color: #f4f4f4;
     padding: 20px 20px;
+    margin-left: 300px;
 }
 
 #title-nav{
@@ -61,10 +64,16 @@ pre{
 }
 
 #navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
     min-width: 300px;
     width: 15%;
+    height: 100%;
     background-color: rgb(44, 70, 143);
 }
+
+
 
 @media (max-width: 768px){
     #container-doc{
@@ -74,7 +83,15 @@ pre{
     }
     
     #navbar{
+        position: static;
+        min-width: 300px;
         width: 100%;
+        height: auto;
+        background-color: rgb(44, 70, 143);
+    }
+
+    #main-doc{
+        margin-left: 0px;
     }
 
 }

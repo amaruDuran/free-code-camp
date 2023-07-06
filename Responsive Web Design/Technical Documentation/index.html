@@ -42,9 +42,19 @@
                 </header>
                 <p>
                     Las listas son una de las estructuras de datos más utilizadas en el mundo. 
-                    Estas permiten multiples tipos de datos dentro de la misma.
-                    Dado que python no es fuertemente tipado. Se pueden Guardar desde números, strings,
-                    hasta objetos (tipos de datos abstractos - TDAs).
+                    Estas permiten múltiples tipos de datos dentro de la misma,
+                    dado que python no es fuertemente tipado. 
+                    
+                    <p>Se pueden Guardar desde:
+                        <ul>
+                            <li class="introduccion-link">Números.</li>
+                            <li class="introduccion-link">Strings.</li>
+                            <li class="introduccion-link">Listas.</li>
+                            <li class="introduccion-link">Pilas.</li>
+                            <li class="introduccion-link">Colas.</li>
+                            <li class="introduccion-link">Cualquier otro Objeto (ó TDA).</li>
+                        </ul>
+                    </p>
                 </p>
             </section>
             <section id="Crear_Lista" class="main-section">
@@ -85,7 +95,6 @@
                     <h2>Eliminar Elemento</h2>
                 </header>
                 <h3>list.pop([i])</h3>
-                <h4><i>Complejidad Temporal:</i> O(1) sin parámetros, O(n) con parametros</h4>
                 <p>
                     Elimina el elemento de la lista ubicado en la posición i y lo devuelve.
                 </p>
@@ -93,8 +102,9 @@
                     Podemos no pasarle el parámetro i, en ese caso, 
                     la función pop elimina el último elemento de la lista y lo devuelve.
                 </p>
+                <h4><i>Complejidad Temporal:</i> O(1) sin parámetros, O(n) con parametros</h4>
                 <div>
-                    <b>Caso I</b>: Le pasamos el parámetro i.
+                    <h4>Caso I: Le pasamos el parámetro i.</h4>
                 </div>
                 <pre>
                     <code class="code-example">
@@ -105,7 +115,7 @@
                         $ "pera"
                     </code>
                 </pre>
-                <div><b>Caso II</b>: Sin parámetros.</div>
+                <div><h4>Caso II: Sin parámetros.</h4></div>
                 <pre>
                     <code class="code-example">
                         $ frutas = ["pera", "manzana", "naranja"]
@@ -154,7 +164,7 @@
                     como <a href="https://www.geeksforgeeks.org/python-list-slicing/" target="_blank">slice</a>.
                 </p>
                 <div>
-                    <b>Caso I</b>: Copia exacta de la lista.
+                    <h4>Caso I: Copia exacta de la lista.</h4>
                 </div>
                 <pre>
                     <code class="code-example">
@@ -174,7 +184,7 @@
                     </code>
                 </pre>
                 <div>
-                    <b>Caso II</b>: Copia a través del pasaje de parte de la lista como slice.
+                    <h4>Caso II: Copia a través del pasaje de parte de la lista como slice.</h4>
                 </div>
                 <pre>
                     <code class="code-example">
@@ -199,7 +209,7 @@
                 <h3>list.extend(iter)</h3>
                 <p>
                     Extiende la lista e incluye en la lista los elementos provenientes de un iterable que lo llamo iter. 
-                    Puede ser tanto una lista ó cualquier iterable que conozcamos (en caso de no ser una lista se comporta según el tipo de iterable.).
+                    Puede ser tanto una lista ó cualquier iterable que conozcamos (en caso de no ser una lista se comporta según el tipo de iterable).
                 </p>
                 <p>
                     También mostraré una forma de concatenar listas que posee python. 
@@ -207,8 +217,8 @@
                     aplica la operación sobre la misma lista.
                 </p>
                 <h4><i>Complejidad Temporal: </i>O(m)</h4>
-                <div>m: cantidad de elementos en el iterable.</div>
-                <div><b>Caso I</b>: uso de extend.</div>
+                <p>m: cantidad de elementos en el iterable.</p>
+                <div><h4>Caso I: uso de extend. </h4></div>
                 <pre>
                     <code class="code-example">
                         $ frutas = ["pera", "manzana", "naranja"]
@@ -222,7 +232,7 @@
                         $ ["pera", "anana", "manzana", "naranja", "Selva Negra", "Helado", "Budín"]
                     </code>
                 </pre>
-                <div><b>Caso II</b>: concatenar 2 listas.</div>
+                <div><h4>Caso II: concatenar 2 listas. </h4></div>
                 <pre>
                     <code class="code-example">
                         $ frutas = ["pera","manzana", "naranja"]

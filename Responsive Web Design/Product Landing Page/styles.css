@@ -1,0 +1,39 @@
+html{
+    margin: 0px;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+#header{
+    background-color: #7c7c7c;
+    display: flex;
+    height: 50px;
+    justify-content: start;
+}
+
+#header-img{
+    object-fit: cover;
+}
+
+.nav-bar-ul{
+    display: flex;
+}
+
+.nav-bar-ul li{
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #f1f1f1;
+    padding: 10px 20px;
+}
+
+.nav-link:hover{
+    text-decoration: none;
+    color: #3a3a3a;
+    padding: 10px 20px;
+}

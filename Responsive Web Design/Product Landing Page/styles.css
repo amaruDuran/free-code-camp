@@ -35,10 +35,49 @@ body{
     padding: 10px 20px;
 }
 
+
 .nav-link:hover{
     text-decoration: none;
     color: #3a3a3a;
     padding: 10px 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.container-descripcion{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    justify-items: start;
+    gap: 0px 25px;
+    width: 100%;
+}
+
+.icono-descripcion{
+    grid-column: 1;
+    grid-row: 1 / 2;
+    justify-self: end;
+}
+
+.titulo-descripcion{
+    grid-column: 2/3;
+    grid-row: 1;
+    padding: 0px;
+    margin: 0px;
+}
+
+.descripcion{
+    grid-column: 2/3;
+    grid-row: 2;
+    padding: 0px;
 }
 
 .video-container{
@@ -48,7 +87,5 @@ body{
 
 #video{
     max-width: 720px;
-    min-width: 420px;
-    width: 70%;
-    margin: auto;
+    width: 100%;
 }

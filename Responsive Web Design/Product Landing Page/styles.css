@@ -7,15 +7,18 @@ body{
     margin: 0px;
 }
 
+
 #header{
     background-color: #7c7c7c;
     display: flex;
     height: 50px;
     justify-content: start;
+    align-items: center;
 }
 
 #header-img{
     object-fit: cover;
+    height: 50px;
 }
 
 .nav-bar-ul{
@@ -36,4 +39,16 @@ body{
     text-decoration: none;
     color: #3a3a3a;
     padding: 10px 20px;
+}
+
+.video-container{
+    display: flex;
+    justify-items: center;
+}
+
+#video{
+    max-width: 720px;
+    min-width: 420px;
+    width: 70%;
+    margin: auto;
 }

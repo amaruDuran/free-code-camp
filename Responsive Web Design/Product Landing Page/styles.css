@@ -7,7 +7,6 @@ body{
     margin: 0px;
 }
 
-
 #header{
     background-color: #7c7c7c;
     display: flex;
@@ -48,33 +47,22 @@ h2{
 }
 
 .container-descripcion{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid grey; */
+}
+
+.container-title-icon{
+    display: flex;
     align-items: center;
-    justify-items: start;
-    gap: 0px 25px;
+    gap: 0 20px;
+}
+
+.container-desc-productos{
+    margin: 0px auto;
     width: 100%;
+    max-width: 720px;
 }
-
-.icono-descripcion{
-    grid-column: 1;
-    grid-row: 1 / 2;
-    justify-self: end;
-}
-
-.titulo-descripcion{
-    grid-column: 2/3;
-    grid-row: 1;
-    padding: 0px;
-    margin: 0px;
-}
-
-.descripcion{
-    grid-column: 2/3;
-    grid-row: 2;
-    padding: 0px;
-}
-
 .video-container{
     display: flex;
 }

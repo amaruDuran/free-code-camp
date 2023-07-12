@@ -71,3 +71,43 @@ h2{
     max-width: 720px;
     margin: 0 auto;
 }
+
+.precios-producto{
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.container-precios-producto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px 0px;
+}
+
+.container-precio-producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #7c7c7c;
+    width: 280px;
+}
+
+.container-precio{
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+}
+
+.price-title{
+    font-size: 28px;
+}
+
+.price-button{
+    padding: 8px 30px;
+    margin: 20px 0px;
+    font-size: 18px;
+}
+
+.list-price{
+    list-style: square;
+}

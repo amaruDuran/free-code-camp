@@ -114,8 +114,21 @@ h2{
     margin-top: 20px;
 }
 
+.fondo-precios-producto{
+    width: 100%;
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0, .35),
+        rgba(0,0,0, .35)),
+        url("https://drive.google.com/uc?id=1eTTgkqeDJyixVBMXOGbbWU-BsZQpAIo-");
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    padding: 50px 0px;
+}
+
 .precios-producto{
-    margin: 40px auto;
+    margin: 0px auto;
     max-width: 1000px;
 }
 
@@ -171,7 +184,7 @@ h2{
 }
 
 #form{
-    margin: 50px 0px;
+    padding: 50px 0px;
 }
 
 .form-container{

@@ -6,6 +6,7 @@ html{
 body{
     box-sizing: border-box;
     margin: 0px;
+    font-family: 'Oswald', sans-serif;
 }
 
 #header{
@@ -97,6 +98,13 @@ h2{
 
 .video-container{
     display: flex;
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0, .55),
+        rgba(0,0,0, .55)),
+        url("https://drive.google.com/uc?id=1-Y36hgx53Hn90K5Wk59H7-m6daXvbNQ3");
+    background-size: cover;
+    background-position: bottom center;
 }
 
 #video{

@@ -66,4 +66,11 @@ body{
 }
 
 .title{
+    font-size: 30px;
+}
+
+/***** MIS PROYECTOS *****/
+
+.proyectos{
+    height: 100vh;
 }

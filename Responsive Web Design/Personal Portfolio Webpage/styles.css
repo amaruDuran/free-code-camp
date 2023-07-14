@@ -1,0 +1,42 @@
+:root{
+    --nav-background-color: #001b55;
+    --nav-letter-color:#f1f1f1;
+}
+
+html{
+    margin: 0px;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color: var(--nav-background-color);
+}
+
+.icon-letter{
+    color: var(--nav-letter-color);
+    margin-right: auto;
+    padding-left: 25px;
+}
+
+.navbar ul{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: var(--nav-letter-color);
+    padding: 20px 20px;
+}

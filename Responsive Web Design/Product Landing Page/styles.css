@@ -166,6 +166,13 @@ h2{
     padding: 5px 30px;
     margin: 20px 0px;
     font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #f5f857;
+    border: 1px solid #bdb025;
+}
+
+.price-button:hover{
+    background-color: #f0e055;
 }
 
 .ul-price{
@@ -205,6 +212,13 @@ h2{
     padding: 5px 0px;
     margin-top: 25px;
     font-size: 18px;
+    background-color: #5a6268;
+    border:1px solid #7b8181;
+    color: #f1f1f1;
+}
+
+.email-button:hover{
+    background-color: #6b757c;
 }
 
 .title-form{

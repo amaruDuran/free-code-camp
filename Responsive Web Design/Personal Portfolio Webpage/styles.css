@@ -46,6 +46,11 @@ body{
     text-decoration: none;
     color: var(--nav-letter-color);
     padding: 20px 20px;
+    /* height: 100%; */
+}
+
+.navbar-link:hover{
+    background-color: #d88200;
 }
 
 /***** SOBRE MI *****/

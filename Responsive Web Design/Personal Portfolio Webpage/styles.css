@@ -27,6 +27,8 @@ body{
     color: var(--nav-letter-color);
     margin-right: auto;
     padding-left: 25px;
+    font-weight: 500;
+    font-size: 30px;
 }
 
 .navbar ul{

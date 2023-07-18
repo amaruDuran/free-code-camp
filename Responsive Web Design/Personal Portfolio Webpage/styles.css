@@ -17,19 +17,19 @@ body{
 
 /***** Navbar *****/
 
-.header{
-    display: flex;
-    align-items: center;
-    height: 70px;
-    background-color: var(--nav-background-color);
-}
-
 .icon-letter{
     color: var(--nav-letter-color);
     margin-right: auto;
     padding-left: 25px;
     font-weight: 500;
     font-size: 30px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color: var(--nav-background-color);
 }
 
 .navbar ul{
@@ -174,9 +174,9 @@ body{
         font-size: 15px;
     }
 
-    .header{
+    .navbar{
         flex-direction: column;
-        height: 100%;
+        height: 180px;
         padding-bottom: 5px;
     }
 

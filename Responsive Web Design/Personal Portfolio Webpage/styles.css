@@ -1,7 +1,7 @@
 :root{
     --nav-background-color: #001b55;
     --nav-letter-color:#f1f1f1;
-    --contact-icon-colo: #a5a5a5;
+    --contact-icon-color: #a5a5a5;
 }
 
 html{
@@ -46,7 +46,6 @@ body{
     text-decoration: none;
     color: var(--nav-letter-color);
     padding: 20px 20px;
-    /* height: 100%; */
 }
 
 .navbar-link:hover{
@@ -159,9 +158,47 @@ body{
 
 .icon-link{
     text-decoration: none;
-    color: var(--contact-icon-colo);
+    color: var(--contact-icon-color);
 }
 
 .icon-link:hover{
     color: var(--nav-letter-color);
+}
+
+@media (max-width: 720px) {
+    .title{
+        font-size: 35px;
+    }
+
+    .sub-title{
+        font-size: 15px;
+    }
+
+    .header{
+        flex-direction: column;
+        height: 100%;
+        padding-bottom: 5px;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px 0px;
+    }
+
+    .navbar-link{
+        padding: 5px 100vw;
+    }
+
+    .icon-letter{
+        margin: 0px auto;
+        padding: 0px;
+    }
+
+}
+
+@media(max-width: 480px){
+    .title{
+        font-size: 30px;
+    }
 }

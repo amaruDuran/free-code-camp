@@ -37,11 +37,13 @@ select{
     padding-top: 20px;
     text-align: center;
     color: rgb(248, 248, 248);
+    font-size: 35px;
 }
 
 #description{
     text-align: center;
     color: whitesmoke;
+    font-size: 18px;
 }
 
 #personal-info, .class-questions{

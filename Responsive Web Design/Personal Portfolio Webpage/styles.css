@@ -94,8 +94,9 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     place-items: center;
-    gap: 20px 0px;
-    padding: 40px;
+    gap: 35px 0px;
+    padding-bottom: 100px;
+    padding-top: 20px;
 }
 
 .card-proyecto{
